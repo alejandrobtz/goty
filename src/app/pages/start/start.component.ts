@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { HorizontalchartComponent } from '../../components/horizontalchart/horizontalchart.component';
+
 
 @Component({
   selector: 'app-start',
+  imports: [ HorizontalchartComponent],
   standalone: true,
-  imports: [],
   templateUrl: './start.component.html',
   styleUrl: './start.component.css'
 })
