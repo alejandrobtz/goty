@@ -18,7 +18,7 @@ export class GameService {
 	}
 
 	public vote(gameId: string): Observable<any> {
-		return this.http.post<any>(`${environment.url}/api/goty/${ gameId }asas`, {})
+		return this.http.post<any>(`${environment.url}/api/goty/${ gameId }`, {})
 			.pipe(
 				catchError((err) => { 
 					return of(err.error);
